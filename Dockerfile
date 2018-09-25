@@ -10,5 +10,5 @@ RUN cd /tmp/build && mvn clean package \
         #清理编译痕迹
         && cd / && rm -rf /tmp/build
 VOLUME /tmp
-EXPOSE 8888
+EXPOSE 9888
 ENTRYPOINT ["java","-jar","/app.jar"]
