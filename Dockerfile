@@ -12,5 +12,5 @@ RUN cd /tmp/build && mvn clean package \
         #清理编译痕迹
         && cd / && rm -rf /tmp/build
 VOLUME /tmp
-EXPOSE 9888
+EXPOSE 8888
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
